@@ -1,0 +1,10 @@
+services:
+backend:
+build: ./backend
+container_name: backend_api
+ports:
+- "8000:8000"
+volumes:
+- ./backend/app:/app
+environment:
+- DATABASE_URL=sqlite:///./test.db
