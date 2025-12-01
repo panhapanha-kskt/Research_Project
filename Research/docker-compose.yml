@@ -8,3 +8,5 @@ volumes:
 - ./backend/app:/app
 environment:
 - DATABASE_URL=sqlite:///./test.db
+- API_KEY=supersecret123
+- FERNET_KEY=CUnBgO4sxYFk_I0cwNUAvXzzqN2hs0fPZjYsWaRAApk=
